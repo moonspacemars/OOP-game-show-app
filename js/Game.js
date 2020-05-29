@@ -6,6 +6,7 @@ class Game {
         this.missed = 0;
         this.phrases = this.createPhrases();
         this.activePhrase = null;
+        this.resetGame();
     }
 
 
@@ -23,7 +24,7 @@ class Game {
         return group;
     }
 
-    
+
     /**
      * Selects random phrase from phrases property
      * @return {Object} Phrase Object choosen to be used
@@ -37,8 +38,7 @@ class Game {
     /**
      * Begins game by selecting a random phrase and displaying to user
      */
-    startGame() {
-        this.resetGame();
+    startGame() {        
         const div = document.querySelector("#overlay");
         div.style.display = "none";
         this.activePhrase = this.getRandomPhrase();
