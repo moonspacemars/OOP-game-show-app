@@ -22,6 +22,8 @@ class Game {
         group.push(new Phrase("An apple a day keeps the doctor away"));
         return group;
     }
+
+    
     /**
      * Selects random phrase from phrases property
      * @return {Object} Phrase Object choosen to be used
